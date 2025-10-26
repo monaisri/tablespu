@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางเรียน</title>
+    <style>
+        /* 1. สไตล์สำหรับตารางโดยรวม */
+        .styled-table {
+            border-collapse: collapse; /* ลบเส้นขอบคู่ */
+            margin: 25px 0;
+            font-size: 0.85em;
+            font-family: Tahoma, sans-serif;
+            min-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ตารางดูมีมิติ */
+            border: 2px solid #000000;
+        }
+
+        /* 2. สไตล์สำหรับส่วนหัวตาราง (Thead) */
+        .styled-table thead tr {
+            background-color: #009879; /* สีเขียวเข้ม */
+            color: #ffffff;
+            text-align: center; /* จัดกึ่งกลางส่วนหัว */
+        }
+
+        /* 3. สไตล์สำหรับเซลล์หัวและข้อมูล */
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd; /* กำหนดเส้นขอบบาง ๆ */
+            height: 4px;
+        }
+
+        /* 4. สไตล์สำหรับแถวข้อมูล (Tbody) */
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+            background-color: #ffffff;
+        }
+
+        /* 5. สลับสีแถวเพื่อให้แยกแยะง่ายขึ้น (Optional: zebra stripes) */
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3; /* สีเทาอ่อนสำหรับแถวคู่ */
+        }
+        
+        /* 6. การจัดตำแหน่งข้อความในคอลัมน์ต่างๆ */
+        .styled-table td {
+            text-align: center; /* จัดกึ่งกลางข้อมูลทุกเซลล์ */
+        }
+        
+        /* จัดชิดซ้ายสำหรับคอลัมน์ "วิชา" เพื่อให้อ่านง่ายขึ้น */
+        .styled-table td:nth-child(3) {
+            text-align: left; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+        <table width = "100%" class="styled-table">
+        <tr>
+            <th>วัน</th>
+            <th>เวลา</th>
+            <th>วิชา</th>
+            <th>อาจารย์</th>
+            <th>ห้อง</th>
+        </tr>
+        
+        <tr>
+            <td>จันทร์</td>
+            <td>09.00-11.30</td>
+            <td>CSI101 (ปฏิบัติ)</td>
+            <td>อ.วุฏฐชัย</td>
+            <td>05-0901</td>
+        </tr>
+        <tr>
+            <td></td>   
+            <td>12.00-14.30</td>
+            <td>CSI102</td>
+            <td>อ.เบล</td>
+            <td>05-0409</td>
+        </tr>
+        <tr>
+            <td>อังคาร</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>พุธ</td>
+            <td>9.00-10.40</td>
+            <td>USC10967</td>
+            <td>อ.มาลิวรรณ</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>13.00-14.40</td>
+            <td>CSI101 (ทฤษฏี)</td>
+            <td>อ.วุฏฐชัย</td>
+            <td>05-0404</td>
+        </tr>
+        <tr>
+            <td>พฤหัสบดี</td>
+            <td>13.00-14.40</td>
+            <td>CSI199</td>
+            <td>อ.มาสวีร์</td>
+            <td>01-0500</td>
+        </tr>
+        <tr>
+            <td>ศุกร์</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+     </tbody>
+    </table>
+    <div style="text-align: center; margin-top: 20px;font-size: 40px;">คลิปแนะนำตัว</div>
+    <div style="text-align: center;">
+    <iframe width="500" height="320" src="https://www.youtube.com/embed/TE-VCspVyQM" title="แนะนำตัว" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div style="text-align: center; margin-top: 20px;font-size: 40px;">รูปภาพ</div>
+    <div style="text-align: center;">
+    <img src="monaisri.jpg" width ="250">
+    </div>
+</body>
+</html>
